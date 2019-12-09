@@ -1,0 +1,14 @@
+{
+  "name": "print-table",
+  "version": "1.0.0",
+  "description": "print multi objects as a table",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "gf-js": "^1.1.2"
+  }
+}
