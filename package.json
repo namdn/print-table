@@ -1,6 +1,6 @@
 {
   "name": "print-table",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "print multi objects as a table",
   "main": "index.js",
   "scripts": {
