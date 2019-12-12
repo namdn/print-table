@@ -3,6 +3,7 @@ const {
     printTableLR
 } = require('./index')
 
+//get data from https://jsonplaceholder.typicode.com/comments
 let table = [
     {
         "postId": 1,
