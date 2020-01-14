@@ -24,7 +24,8 @@ function printTable(table, options) {
     if (names) {
         table = table.mapBy(names)
     }
-    let headers = Object.keys(table[0]);
+    let keys = Object.keys(table[0]);
+    let headers = keys;
 
     if (typeof maxLength === 'number') {
         maxLength = Object.packObject(headers, [maxLength].repeat())
@@ -72,7 +73,7 @@ function printTable(table, options) {
 
 
     table.map(
-        row => Object.entries(row)
+        row => keys.map(k => ([k, row[k]]))
             .map(([k, v]) => {
                 // console.log(v, `typeof ${v}`, typeof(v))
                 let nv = cv(v).toString();
